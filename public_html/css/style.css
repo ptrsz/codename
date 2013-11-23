@@ -1,0 +1,36 @@
+#wrapper {
+    font-family: "Helvetica Neue";
+    color: black;
+}
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background-color: rgba(15,107,139,0.5);
+}
+
+#header h2 {
+    font-family: "Helvetica Neue";
+    font-size: 40px;
+    color: black;
+}
+
+#board {
+    position: relative;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    background-color: rgba(0, 139, 32, 0.49);
+}
+
+#footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    height: 50px;
+}
+
+#footer h3{
+
+}
