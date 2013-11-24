@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <title>codename.</title>
+    <?php include_once("connect.php")?>
+
 </head>
 <body>
 <?php ini_set('default_charset','utf-8'); ?>
