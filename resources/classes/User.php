@@ -9,13 +9,17 @@
 
 class User {
     protected $id;
-    protected $name;
+    protected $firstname;
+    protected $lastname;
+    protected $email;
     protected $age;
     protected $gender;
     private $password;
 
-    function User($n,$a,$g,$p){
-        $this->name = $n;
+    function User($f,$l,$e,$a,$g,$p){
+        $this->firstname = $f;
+        $this->lastname = $l;
+        $this->email = $e;
         $this->age = $a;
         $this->gender = $g;
         $this->password = $p;

@@ -15,4 +15,4 @@ $user = new User($name,$age,$gender,$pass);
 mysql_query("INSERT INTO users (name,age,gender,password) VALUES ('alma','körte','nincs','nemkell');",$connect);
 
 mysql_close($connect);
-echo "okszi";
+?>

@@ -8,14 +8,4 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <title>codename.</title>
-    <?php include_once("connect.php")?>
-    <?php include("init.php")?>
-    <?php include("accesscontrol.php")?>
 </head>
-<body>
-<?php ini_set('default_charset','utf-8'); ?>
-<div id="wrapper">
-    <?php include("struct/header.php")?>
-    <?php include("struct/board.php")?>
-    <?php include("struct/footer.php")?>
-</div>
