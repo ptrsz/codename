@@ -1,13 +1,8 @@
 <?php
-
 session_start();
 include_once("../resources/database/dbconnect.php");
-
-
 $userid = (isset($_POST['userid']) ? $_POST['userid'] : $_SESSION['userid']);
 $password = (isset($_POST['password']) ? $_POST['password'] : $_SESSION['password']);
-
-
 
 if( !isset($userid)){
     ?>
@@ -17,6 +12,7 @@ if( !isset($userid)){
             <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
         </head>
         <body>
+            <?php include("struct/header.php")?>
             <h1> Login Required </h1>
             <p>
                 <form method="post" action="<?=$_SERVER['PHP_SELF']?>">
@@ -25,6 +21,7 @@ if( !isset($userid)){
                 <input type="submit" value="Log in" />
                 </form>
             </p>
+            <?php include("struct/footer.php")?>
         </body>
     </html>
     <?php
@@ -37,12 +34,6 @@ $_SESSION['password'] = $password;
 if(!validUser($userid,$password)){
     unset($_SESSION['userid']);
     unset($_SESSION['password']);
-    ?>
-    <html>
-        Access Denied.
-        <a href="accesscontrol.php">Login page</a>
-    </html>
-    <?php
     exit;
 }
 

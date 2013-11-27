@@ -1,10 +1,7 @@
-<?php require("..resources/facebook/facebook.php")?>;
 <div id="board">
-    <?php
-    $facebook = new Facebook(array(
-        'appId' => '606539356048599',
-        'secret' => '15bb7b8dcf2165be44b553051cc3d1c7',
-    ));
-    ?>
-
+    <h1>Üdv az oldalon! Nincs itt semmi különösképp érdekes.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 </div>
